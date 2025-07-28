@@ -20,7 +20,7 @@ const Dashboard = ({ user, onLogout }) => {
   const fetchNotes = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/notes', {
+      const response = await fetch('https://note-taking-application-seven.vercel.app/api/notes', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -47,7 +47,7 @@ const Dashboard = ({ user, onLogout }) => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/notes', {
+      const response = await fetch('https://note-taking-application-seven.vercel.app/api/notes', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ const Dashboard = ({ user, onLogout }) => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/notes/${editingNote.id}`, {
+      const response = await fetch(`https://note-taking-application-seven.vercel.app/api/notes/${editingNote.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -112,7 +112,7 @@ const Dashboard = ({ user, onLogout }) => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/notes/${noteId}`, {
+      const response = await fetch(`https://note-taking-application-seven.vercel.app/api/notes/${noteId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,
