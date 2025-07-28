@@ -84,7 +84,7 @@ const Signup = ({ onLogin }) => {
 
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/auth/send-otp', {
+      const response = await fetch('https://note-taking-application-seven.vercel.app/api/auth/send-otp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -116,7 +116,7 @@ const Signup = ({ onLogin }) => {
 
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/auth/verify-otp', {
+      const response = await fetch('https://note-taking-application-seven.vercel.app/api/auth/verify-otp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -151,7 +151,7 @@ const Signup = ({ onLogin }) => {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/google', {
+      const response = await fetch('https://note-taking-application-seven.vercel.app/api/auth/google', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
