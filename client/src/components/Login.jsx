@@ -51,7 +51,7 @@ const Login = ({ onLogin }) => {
 
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch('https://note-taking-application-seven.vercel.app/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ const Login = ({ onLogin }) => {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/google', {
+      const response = await fetch('https://note-taking-application-seven.vercel.app/api/auth/google', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
