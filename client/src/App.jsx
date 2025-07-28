@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      fetch('http://localhost:5000/api/auth/profile', {
+      fetch('https://note-taking-application-seven.vercel.app/api/auth/profile', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
