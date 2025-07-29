@@ -9,7 +9,7 @@ const app = express();
 const PORT = 5000;
 const JWT_SECRET = 'your-secret-key';
 
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 
 
